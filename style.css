@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+:root{
+--gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+--paleblue: hsl(243, 100%, 93%);
+--grayishblue: hsl(229, 7%, 55%);
+--darkblue: hsl(228, 56%, 26%);
+--verydarkblue: hsl(229, 57%, 11%);
+}
+
+@media (min-width:270px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: var(--darkblue) url(images/bg-mobile.png) no-repeat;
+        background-size: cover;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons{
+        padding: 50px;
+        background-color: var(--darkblue);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    .icons > img{
+        width: 95px;
+        margin-bottom: 30px;
+    }
+    .subicons img{
+        background-color: var(--verydarkblue);
+        padding: 10px;
+        height: 16px;
+        border-radius: 8px;
+        margin-right: 8px;
+    }
+}
