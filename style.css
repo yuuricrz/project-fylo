@@ -25,27 +25,4 @@
         background: var(--darkblue) url(images/bg-mobile.png) no-repeat;
         background-size: cover;
     }
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-    .icons{
-        padding: 50px;
-        background-color: var(--darkblue);
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-    }
-    .icons > img{
-        width: 95px;
-        margin-bottom: 30px;
-    }
-    .subicons img{
-        background-color: var(--verydarkblue);
-        padding: 10px;
-        height: 16px;
-        border-radius: 8px;
-        margin-right: 8px;
-    }
 }
