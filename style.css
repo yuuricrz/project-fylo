@@ -67,15 +67,32 @@
     .used span{
         font-weight: 700;
     }
-    meter{
+    [type="range"]{
+        transform: scale(1.5);
+        appearance: none;
+        display: block;
         background-color: var(--verydarkblue);
-        margin: 0 auto;
         border-radius: 10px;
-        padding: 0.2px 4px;
-        width: 260px;
-        height: 25px;
-        color: var(--gradient);
-        margin-bottom: 8px;
+        width: 180px;
+        margin: 10px auto;
+        padding: 2px;
+
+    }
+    [type="range"]::-webkit-slider-thumb{
+        appearance: none;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    [type="range"]::-moz-range-thumb{
+        appearance: none;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: white;
     }
     .progress{
         display: flex;
