@@ -11,18 +11,23 @@
 <body>
   <main>
     <div class="icons">
-      <img src="images/logo.svg" alt="">
+      <img src="images/logo.svg" alt="logo">
       <div class="subicons">
-        <img src="images/icon-document.svg" alt="">
-        <img src="images/icon-folder.svg" alt="">
-        <img src="images/icon-upload.svg" alt="">
+        <img src="images/icon-document.svg" alt="document icon">
+        <img src="images/icon-folder.svg" alt="folder icon">
+        <img class="up" src="images/icon-upload.svg" alt="upload icon">
       </div>
     </div>
-    <div class="used">
-      <p>You've used 815 GB of your storage</p>
-      <p>185 GB Left</p>
-      <p>0 GB</p>
-      <p>1000 GB</p>
+    <div class="infoused">
+      <p class="used">You've used <span>815 GB</span> of your storage</p>
+      <meter min="0" value="815" max="1000"></meter>
+      <div class="progress">
+        <p class="first">0 GB</p>
+        <p class="last">1000 GB</p>
+      </div>
+      <div class="remaining">
+        <p>185 <span>GB LEFT</span></p>
+      </div>
     </div>
   </main>
 </body>

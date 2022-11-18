@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 :root{
@@ -16,7 +17,7 @@
 --verydarkblue: hsl(229, 57%, 11%);
 }
 
-@media (min-width:270px){
+@media (min-width:375px){
     body{
         display: flex;
         justify-content: center;
@@ -25,4 +26,96 @@
         background: var(--darkblue) url(images/bg-mobile.png) no-repeat;
         background-size: cover;
     }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--darkblue);
+        height: 170px;
+        border-radius: 15px;
+        border-top-right-radius: 90px;
+        width: 85vw;
+        margin-bottom: 10px;
+    }
+    .icons > img{
+        width: 120px;
+        margin: 0 0 30px 35px;
+    }
+    .subicons{
+        margin-left: 35px;
+        display: flex;
+        align-items: baseline;
+    }
+    .subicons img{
+        background-color: var(--verydarkblue);
+        padding: 10px;
+        border-radius: 10px; 
+        margin-right: 15px;
+    }
+    .infoused {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        background-color: var(--darkblue);
+        border-radius: 15px;
+    }
+    .used{
+        color: var(--paleblue);
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    .used span{
+        font-weight: 700;
+    }
+    meter{
+        background-color: var(--verydarkblue);
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 0.2px 4px;
+        width: 260px;
+        height: 25px;
+        color: var(--gradient);
+        margin-bottom: 8px;
+    }
+    .progress{
+        display: flex;
+        justify-content: space-between;
+        color: var(--paleblue);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .first{
+        margin-left: 30px;
+    }
+    .last{
+        margin-right: 30px;
+    }
+   .remaining{
+    position: relative;
+    top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 180px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+   }
+   .remaining p{
+    color: var(--verydarkblue);
+    font-weight: 700;
+    font-size: 3rem;
+   }
+   .remaining span{
+    color: var(--grayishblue);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+   }
+   .remaining p, .remaining span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 }
