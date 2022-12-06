@@ -78,6 +78,7 @@
         padding: 2px;
 
     }
+    
     [type="range"]::-webkit-slider-thumb{
         appearance: none;
         display: block;
